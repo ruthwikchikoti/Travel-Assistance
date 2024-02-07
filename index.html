@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="brand">Travel</a>
+        <div class="menu-btn"></div>
+        <div class="navigation ">
+            <div class="navigation-items">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#explore">Explore</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <section class="home" id="home">
+        <video class="video-slide active" src="https://mega.nz/file/AW0lHRSC#U0d0gVSSwBzszI49KoX54g5J6jLKrTOvFZhDV36bmjs" autoplay muted loop></video>
+        
+        <video class="video-slide" src="https://drive.google.com/file/d/1blu1QNGJ9gSs-uWI0I92sTme9kMJdJso/view?usp=drive_link" autoplay muted loop></video>
+        <video class="video-slide" src="https://drive.google.com/file/d/1cIXsVTDxaaC8lhMmcickJSfP3UP894G-/view?usp=drive_link" autoplay muted loop></video>
+        <video class="video-slide" src="https://drive.google.com/file/d/1omEoJIJeuXF5n_pDYmsvze2xamwiTPSh/view?usp=drive_link" autoplay muted loop></video>
+        <video class="video-slide" src="https://drive.google.com/file/d/1LLEnzqbvD1oKJG493Y5wCXtH_bL8tO-R/view?usp=drive_link" autoplay muted loop></video>
+
+        <div class="content active">
+            <h1>Lakshadweep.<br><span>Island</span></h1>
+            <p>Lakshadweep, often referred to as the "Island Paradise," is a group of stunning coral islands in the Arabian Sea. With azure waters, vibrant marine life, and serene landscapes, Lakshadweep offers a perfect escape. Explore the rich culture, pristine beaches, and unique biodiversity. Discover the allure of this tropical haven.</p>
+            <a href="https://en.wikipedia.org/wiki/Lakshadweep" target="_blank">Read More</a>
+        </div>
+        
+        <div class="content">
+            <h1>Road Trip.<br><span>Together</span></h1>
+            <p>Embark on a memorable road trip adventure together. Explore scenic landscapes, create lasting memories, and share the joy of the open road. Whether it's the thrill of new destinations or the camaraderie of the journey, a road trip brings people closer. Experience the magic of togetherness on this exciting road escapade.</p>
+            <a href="https://onhisowntrip.com/a-complete-guide-to-travelling-in-lakshadweep/" target="_blank">Read More</a>
+        </div>
+        
+        <div class="content">
+            <h1>Adventures.<br><span>Off Road</span></h1>
+            <p>Embark on thrilling adventures off the beaten path with Off Road experiences. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, tempore atque molestias? Dive into the excitement of uncharted terrain, conquering challenges, and creating unforgettable memories. Ready for an adrenaline-packed journey?</p>
+            <a href="https://blog.weekendthrill.com/22-activities-to-do-in-lakshadweep/" target="_blank">Read More</a>
+        </div>
+        
+        <div class="content">
+            <h1>Feel Nature.<br><span>Relax </span></h1>
+            <p>Immerse yourself in the soothing embrace of nature with the "Feel Nature" experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reconnect with the tranquility of natural surroundings, finding solace in the gentle rhythms of the environment. Take a moment to relax, rejuvenate, and appreciate the beauty that surrounds you.</p>
+            <a href="https://en.wikipedia.org/wiki/Lakshadweep" target="_blank">Read More</a>
+        </div>
+        
+        <div class="content">
+            <h1>Camping.<br><span>Enjoy</span></h1>
+            <p>Experience the joy of camping amidst nature's beauty. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Whether under the starlit sky or surrounded by lush landscapes, camping offers a perfect blend of adventure and relaxation. Immerse yourself in the great outdoors and create unforgettable moments. Ready to enjoy nature's embrace?</p>
+            <a href="https://www.tripadvisor.in/Hotels-g297640-c3-zff29-Lakshadweep-Hotels.html" target="_blank">Read More</a>
+        </div>
+        
+
+        <div class="media-icons">
+            <a href="https://www.facebook.com/groups/myisland/" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/lakshadweep_ld?lang=en" target="_blank"><i
+                    class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/explorelakshadweep/?hl=en" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/pulse/lakshadweep-india-the-travel-cube" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+
+        </div>
+    </section>
+    <section class="vacation-itinerary" id="explore">
+        <div class="container">
+            <h1>Plan Your Trip</h1>
+            <form id="tripForm" action="#">
+                <div class="personal-details">
+                    <h2>Personal Details</h2>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="group-details">
+                    <h2>Group Details</h2>
+                    <label for="adults">Number of Adults:</label>
+                    <input type="number" id="adults" name="adults" required>
+                    <label for="children">Number of Children:</label>
+                    <input type="number" id="children" name="children" required>
+                </div>
+                <div class="hotel-option">
+                    <h2>Hotel Accommodation</h2>
+                    <label for="hotelOption">Add Hotel Accommodation?</label>
+                    <select id="hotelOption" name="hotelOption">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="food-option">
+                    <h2>Food</h2>
+                    <label for="foodOption">Add Food Package?</label>
+                    <select id="foodOption" name="foodOption">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="trip-cost" id="tripCost">
+                    <h3>Trip Cost Details</h3>
+                    <div class="cost-details">
+                        <span class="label">Cost for Adult:</span>
+                        <span class="value" id="costPerAdult">₹3000</span>
+                    </div>
+                    <div class="cost-details">
+                        <span class="label">Cost for Child:</span>
+                        <span class="value" id="costPerChild">₹1500</span>
+                    </div>
+                    <div class="cost-details">
+                        <span class="label">Hotel Cost per Night:</span>
+                        <span class="value" id="hotelCost">₹3000</span>
+                    </div>
+                    <div class="cost-details">
+                        <span class="label">Food Cost per Day:</span>
+                        <span class="value" id="foodCost">₹500</span>
+                    </div>
+                    <div class="total-cost">
+                        <span class="label">Total Cost:</span>
+                        <span class="value" id="totalCost">₹0</span>
+                    </div>
+                </div>
+                <button type="button" id="calculateCostBtn">Calculate Cost</button>
+            </form>
+        </div>
+
+    </section>
+    <section class="explore-section">
+        <div class="explore-card">
+          <h2>Book Your Flights</h2>
+          <form id="flight-search-form">
+            <label for="origin">From (IATA Code):</label>
+            <input type="text" id="origin" name="origin" required>
+      
+            <label for="destination">To (IATA Code):</label>
+            <input type="text" id="destination" name="destination" required>
+      
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+      
+            <button type="button" onclick="searchFlights()">Search Flights</button>
+          </form>
+          <div id="flight-search-results"></div>
+        </div>
+      </section>
+        
+    <div class="container-g" id="gallery">
+        <section class="gallery">
+            <div class="gallery__strip__wrapper">
+                <div class="gallery__strip one">
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/10uTSr-MkB1geEMx5xSO44rJ9_FkRwgCR/view?usp=sharing" alt="Agatti">
+                        </div>
+                        <div class="photo__name">Agatti</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1upuyuwLpCQpdAZJsPq2xKQp7VLYbgqqR/view?usp=sharing" alt="Bangaram">
+                        </div>
+                        <div class="photo__name">Bangaram</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1BkSUGmKXHEyUlDhX7-oEuemLJNaoYF-J/view?usp=sharing" alt="Kavaratti">
+                        </div>
+                        <div class="photo__name">Kavaratti</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1Od5bTDNHVGi4oHr-m6Akhhmzhvk730TY/view?usp=sharing" alt="Kalpeni">
+                        </div>
+                        <div class="photo__name">Kalpeni</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="gallery__strip__wrapper">
+                <div class="gallery__strip two">
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1XRUKIrCWmu9FD10_c6PCKZ64-03PFK7G/view?usp=sharing" alt="Minicoy">
+                        </div>
+                        <div class="photo__name">Minicoy</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/18aYrLwOtXil9qjNFbaV9lDWW6qSgyQw1/view?usp=sharing" alt="Andrott">
+                        </div>
+                        <div class="photo__name">Andrott</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/11DGMUDxKGwHsSQtNLMXSKeaYd7HYUSrj/view?usp=sharing" alt="Amini">
+                        </div>
+                        <div class="photo__name">Amini</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1HSYxsAivfvdkpXoZOOPyGA-9EAoavb1e/view?usp=sharing" alt="Kadmat">
+                        </div>
+                        <div class="photo__name">Kadmat</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="gallery__strip__wrapper">
+                <div class="gallery__strip three">
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1zHd6kEWn4Q6wz6yYSse2fXS5YmHV_Di3/view?usp=sharing" alt="Chetlat">
+                        </div>
+                        <div class="photo__name">Chetlat</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1zxZGRCm6suRDLELU6HMeow9h8VBtJzYi/view?usp=sharing" alt="Bitra">
+                        </div>
+                        <div class="photo__name">Bitra</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1IE8x0kYPlT1R3u34BEm2gaO9KCZXkGfb/view?usp=sharing" alt="Kiltan">
+                        </div>
+                        <div class="photo__name">Kiltan</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1DpRapA1n7RTm5hcNY-fciMC8EMOP-WgM/view?usp=sharing" alt="Suheli Par">
+                        </div>
+                        <div class="photo__name">Suheli Par</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="gallery__strip__wrapper">
+                <div class="gallery__strip four">
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1hZURlsCJB0lFcqguuuCeDXxOVb8SuZvh/view?usp=sharing" alt="Amindivi">
+                        </div>
+                        <div class="photo__name">Amindivi</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/199ET7-5usd8gbY34Yvc7tHYzit6Co7zQ/view?usp=drive_link" alt="Lakshadweep Sea">
+                        </div>
+                        <div class="photo__name">Lakshadweep Sea</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1wXvEaLuxr836WQTpbBbkqVsPjxLbfU0G/view?usp=sharing" alt="Indian Ocean">
+                        </div>
+                        <div class="photo__name">Indian Ocean</div>
+                    </div>
+                    <div class="photo">
+                        <div class="photo__image">
+                            <img src="https://drive.google.com/file/d/1xVp06nQUFD6nQ6ftoWDmGiPKO21hy_QK/view?usp=drive_link" alt="Arabian Sea">
+                        </div>
+                        <div class="photo__name">Arabian Sea</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2>About Lakshadweep Islands</h2>
+            <p>Welcome to the official website of Lakshadweep Islands – a mesmerizing archipelago nestled in the azure waters of the Arabian Sea. Comprising 36 pristine islands, Lakshadweep is a tropical haven that beckons travelers with its unparalleled beauty and rich cultural heritage.</p>
+            <br>
+            <p>Our mission is to provide a gateway to the wonders of Lakshadweep, offering a wealth of information to help you plan an unforgettable journey. From the coral atolls to the vibrant marine life, every facet of Lakshadweep is a testament to the unspoiled magnificence of nature.</p>
+            <br>
+            <p>Discover the unique charm of each island – from the sandy shores of Agatti and the coral reefs of Bangaram to the tranquil landscapes of Kavaratti and the adventurous spirit of Kalpeni. Whether you seek a tranquil retreat, thrilling water sports, or a cultural expedition, Lakshadweep promises an experience like no other.</p>
+            <br>
+            <p>Our website serves as your comprehensive guide, providing insights into the diverse flora and fauna, local traditions, and the various activities that await you. Plan your itinerary with confidence, knowing that every island has something special to offer.</p>
+            <br>
+            <p>Immerse yourself in the vibrant culture, savor local delicacies, and explore the underwater wonders that make Lakshadweep a unique destination. Whether you are a seasoned traveler or embarking on your first adventure, let the Lakshadweep Islands captivate your senses and create memories that last a lifetime.</p>
+            <br>
+            <p>For more information, please contact us </p>
+        </div>
+        
+    </section>
+    
+
+    <section class="contact" id="contact">
+        <h2 class="heading-contact">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <p>Have questions or want to learn more about the beautiful Lakshadweep Islands? Reach out to us!</p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.5462515485554!2d72.65463521546542!3d10.565465546546554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05b5159c54a259%3A0x54f542095e54554!2sLakshadweep%20Islands!5e0!3m2!1sen!2sin!4v1669754605415!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        
+        <h2 class="title">Contact Info</h2>
+        <div class="contact-info">
+            <div class="info">
+                <div class="information">
+                    <i class="fas fa-phone-alt icon"></i>
+                    <p>123-456-789</p>
+                </div>
+                <div class="information">
+                    <i class="far fa-envelope icon"></i>
+                    <p>support@lakshadweep-islands.com</p>
+                </div>
+                <div class="information">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <p>R5MJ+PW2, Agatti, Lakshadweep 682553</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <footer>
+        <p>© 2024 Ruthwik Chikoti. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="./index.js" ></script>
+</body>
+
+</html>
